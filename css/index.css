@@ -3,6 +3,10 @@
     font-family: Arial, Helvetica, sans-serif;
 
     /* variable declaration */
+
+    /* firefox scrollbars */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #fff;
 }
 
 
@@ -15,71 +19,12 @@ body {
     background-color: #ffffff;
 }
 
-/* nav styling */
+/* adding scrollbars for most browsers */
+body::-webkit-scrollbar {width: .4rem;}
+body::-webkit-scrollbar-track {background-color: white;}
+body::-webkit-scrollbar-thumb {background-color: black;}
 
-nav {
-    width: 6rem;
-    height: 100vh;
-    position: fixed;
-
-    background-color: grey;
-    transition: width 300ms ease;
-}
-
-/* expands navbar on hover */
-
-nav:hover {
-    width: 18rem;
-}
-
-nav:hover .link-text {
-    display: block;
-    opacity: 100%;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-}
-
-.nav-item {
-    width: 100%;
-}
-
-.nav-item:last-child {
-    margin-top: auto;
-}
-
-.nav-link {
-    display: flex;
-    align-items: center;
-    height: 6rem;
-}
-/* changing the link states of icons */
-.nav-link:link {color: black; text-decoration: none;}
-.nav-link:visited {color: black;}
-
-
-.link-text {
-    display: none;
-    opacity: 0;
-    margin-left: 1rem;
-
-    transition: opacity 50ms ease-in-out 300ms;
-}
-
-.material-icons.large-icons {
-    font-size: 4rem;
-    margin: 0 1rem;
-}
-
+/* nav styling in separate css file */
 
 /* main styling */
 
