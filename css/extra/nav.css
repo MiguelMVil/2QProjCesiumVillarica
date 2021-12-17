@@ -53,9 +53,11 @@ nav {
 /* hover effect */
 nav:hover {
     width: 18rem;
+    box-shadow: 2px 2px 2px black;
 }
 
 nav:hover .link-text {
     display: block;
     opacity: 100%;
 }
+
