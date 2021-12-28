@@ -33,6 +33,7 @@ h3 {
     color: transparent;
     background-image: linear-gradient(90deg, #45EBA5, #163A5F  );
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 /* main styling */
